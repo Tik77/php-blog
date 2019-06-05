@@ -1,8 +1,10 @@
+<?php
+$is_auth = (bool)rand(0, 1); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- favicon icon -->
@@ -57,9 +59,19 @@
                 </ul>
 
                 <ul class="nav navbar-nav text-uppercase pull-right">
-                    <li><a href="#">Register</a></li>
-                    <li><a href="about-me.html">Login</a></li>
-                    <li><a href="contact.html">My profile</a></li>
+                    <?php
+                    if ($is_auth == true) {
+                        ?>
+                        <li><a href="contact.html"> My profile </a></li>
+                        <?php
+                    } else {
+                        ?>
+                        <li><a href="#">Register</a></li>
+                        <li><a href="about-me.html">Login</a></li>
+                        <?php
+                    }
+                    ?>
+
                 </ul>
 
             </div>
@@ -295,7 +307,7 @@
             </div>
             <div class="col-md-4" data-sticky_column>
                 <div class="primary-sidebar">
-                    
+
                     <aside class="widget news-letter">
                         <h3 class="widget-title text-uppercase text-center">Get Newsletter</h3>
 
@@ -642,7 +654,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="text-center">&copy; 2017 <a href="#">Blog, </a> Designed with <i
-                            class="fa fa-heart"></i> by <a href="#">Marlin</a>
+                                class="fa fa-heart"></i> by <a href="#">Marlin</a>
                     </div>
                 </div>
             </div>
