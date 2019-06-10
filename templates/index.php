@@ -1,4 +1,3 @@
-
 <?php
 $data = [
     [
@@ -69,11 +68,6 @@ $data = [
 ];
 ?>
 
-
-<?php
-require 'header.php';
-?>
-
 <!--main content start-->
 <div class="main-content">
     <div class="container">
@@ -132,6 +126,3 @@ require 'header.php';
             </div>
 
 
-<?php require 'aside.php';
-require 'footer.php';
-?>
