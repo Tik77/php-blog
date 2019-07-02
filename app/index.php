@@ -1,5 +1,6 @@
 <?php
 session_start();
+require 'db.php';
 require "function.php";
 require 'config.php';
 $data = [];

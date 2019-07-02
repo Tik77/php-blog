@@ -32,3 +32,4 @@ if (!empty($_POST)) {
 
     }
 }
+insert_data();
