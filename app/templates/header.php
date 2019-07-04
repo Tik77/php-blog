@@ -69,7 +69,7 @@
                         <?php
                     } else {
                         ?>
-                        <li><a href="#">Register</a></li>
+                        <li><a href="?page=register">Register</a></li>
                         <li><a href="?page=login">Login</a></li>
                         <?php
                     }
