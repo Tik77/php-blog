@@ -1,4 +1,7 @@
 <?php
+$send=send_query($conn);
+$send2=send_query2($conn);
+$send3=send_query3($conn);
 logout();
 $email = "valod@example.com";
 $pass = '$2y$10$cky47Mzm/5JIWmyNF0W7tOeM81ttpYPBoSE0sUXpf1SM6MgtnUR7i';
