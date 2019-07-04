@@ -1,6 +1,8 @@
 <?php
-$is_auth = (bool)rand(0, 1); ?>
-<?php $title = "Blog" ?>
+ $title = "Blog" ;
+
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -61,14 +63,14 @@ $is_auth = (bool)rand(0, 1); ?>
 
                 <ul class="nav navbar-nav text-uppercase pull-right">
                     <?php
-                    if ($is_auth == true) {
+                    if ($data["isAuth"] == true) {
                         ?>
-                        <li><a href="contact.html"> My profile </a></li>
+                        <li><a href="?page=profile"> My profile </a></li>
                         <?php
                     } else {
                         ?>
-                        <li><a href="#">Register</a></li>
-                        <li><a href="about-me.html">Login</a></li>
+                        <li><a href="?page=register">Register</a></li>
+                        <li><a href="?page=login">Login</a></li>
                         <?php
                     }
                     ?>
